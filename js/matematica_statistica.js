@@ -1,3 +1,6 @@
+/*2014 DANIELE FRISANCO*/ 
+
+
 function potenza(x, y) {
 	var rval = 1;
 	for (var i = 0; i < y; i++) {
