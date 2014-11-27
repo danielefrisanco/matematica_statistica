@@ -66,7 +66,7 @@ function catalan(n) {
 	return (fattoriale(2 * n)) / (fattoriale(n + 1) * fattoriale(n));
 }
 
-function coefficienti_binomiali(a, b, n) {
+function coefficienti_binomiali(  n) {
 
 	var vettore_coefficienti = [];
 
@@ -74,5 +74,20 @@ function coefficienti_binomiali(a, b, n) {
 		vettore_coefficienti[i] = combinazione_semplice(n, i);
 	}
 	return vettore_coefficienti;
+
+}
+
+
+function esponenti_binomiali(  n) {
+
+	var matrice_esponenti=[] ;
+	
+	for (var i = 0 ; i<=n;i++)
+	{
+	matrice_esponenti[i]=new Array(n-i,i);
+	}
+	
+	 
+	return matrice_esponenti;
 
 }
