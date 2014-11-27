@@ -1,10 +1,12 @@
-/*function fattoriale(n) {
-if (n <= 1)
-return 1;
-return n * fattoriale(n - 1);
-}
- */
+function potenza(x,y){
+var rval = 1;
+	for (var i = 0; i < y; i++) {
+		rval *= x;
 
+	}
+	return rval;
+
+}
 function fattoriale(n) {
 	var rval = 1;
 	for (var i = 2; i <= n; i++)
@@ -39,12 +41,12 @@ function disposizione_semplice(n, k) {
 
 }
 function disposizione_ripetizione(n, k) {
-	var rval = 1;
+ /*var rval = 1;
 	for (var i = 0; i < k; i++) {
 		rval *= n;
-
-	}
-	return rval;
+ 
+	} return rval; */
+	return potenza(n,k);
 
 }
 function combinazione_semplice(n, k) {
@@ -62,22 +64,14 @@ function catalan(n){
 return (fattoriale(2*n))/(fattoriale(n+1)*fattoriale(n));
 }
 
+ 
 
+function coefficienti_binomiali(a,b,n){
 
+var vettore_coefficienti=[];
+ 
+for (var i=0 ;i<=n;i++){   vettore_coefficienti[i]=combinazione_semplice( n,i );
+}
+return vettore_coefficienti;
 
-
-
-
-
-
-
-/*
-var a = [];
-a[0] = 4;
-a[1] = 3;
-alert("PERMUTAZIONE" + permutazione(7, a));
-alert("PERMUTAZIONE_semplice" + permutazione_semplice(7)); 
-alert("disposizione_semplice" + disposizione_semplice(13,8)); 
-alert("disposizione_ripetizione" + disposizione_ripetizione(3, 14));
-alert("combinazione_semplice" + combinazione_semplice(90,6));
-alert("combinazione_ripetizione" + combinazione_ripetizione(20,2));*/
+} 

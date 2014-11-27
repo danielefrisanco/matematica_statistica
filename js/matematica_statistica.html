@@ -1,7 +1,7 @@
  
 <!-- Jquery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="statistica.js" type="text/javascript">
+<script src="matematica_statistica.js" type="text/javascript">
 
 </script>
 <script>
@@ -19,8 +19,10 @@ document.write("</br>disposizione_ripetizione(3,14) " + disposizione_ripetizione
 document.write("</br>combinazione_semplice(90,6) " + combinazione_semplice(90,6));
 
 document.write("</br>combinazione_ripetizione(20,2) " + combinazione_ripetizione(20,2));
-document.write("</br>catalan(10) " + catalan(10));
-
+document.write("</br>catalan(10) " + catalan(10)); 
+var vettore_coefficienti=coefficienti_binomiali(1,2,6);
+for (var i=0 ;i<vettore_coefficienti.length;i++){  document.write("</br>coefficienti_binomiali(6) :["+i+"]  " + vettore_coefficienti[i] );
+} 
 </script>
 </br> 
 
