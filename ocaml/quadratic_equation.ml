@@ -1,6 +1,6 @@
 (* ocaml quadratic_equation.ml  3. 5. 2. *)
 
-(**)
+(* http://progopedia.com/example/quadratic-equation/495/ *)
 let square x = x *. x;;
 
 let delta  a b c = ( square b-. (4. *. a *. c ));;
