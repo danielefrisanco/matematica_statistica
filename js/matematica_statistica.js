@@ -107,3 +107,12 @@ function radice_quadrata_babilonese(a) {
 	}
 	return rval;
 }
+function radice_quadrata_ennesima(a,n) {
+	var rval =a;
+	 
+	for (var i = 1; i <= 25; i++) { 
+		rval =  (1 / n) * ((rval*(n-1)) + (a /Math.pow(rval,n-1)));
+
+	}
+	return rval;
+}
