@@ -98,3 +98,12 @@ function doppio_fattoriale(n) {
 	}
 	return rval;
 }
+function radice_quadrata_babilonese(a) {
+	var rval = 1;
+	var n = 11;
+	for (var i = 1; i <= n; i++) {
+		rval =  (1 / 2) * (rval + (a /rval));
+
+	}
+	return rval;
+}
