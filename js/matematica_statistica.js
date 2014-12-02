@@ -91,3 +91,12 @@ function esponenti_binomiali(  n) {
 	return matrice_esponenti;
 
 }
+
+function doppio_fattoriale(n) {
+	var rval = n;
+	if (n==0) {rval=1;
+}	else{
+	for (var i =n-2; i>0; i=i-2)
+		rval = rval * i;
+	}return rval;
+}
