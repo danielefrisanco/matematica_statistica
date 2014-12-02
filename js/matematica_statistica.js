@@ -1,5 +1,4 @@
-/*2014 DANIELE FRISANCO*/ 
-
+/*2014 DANIELE FRISANCO*/
 
 function potenza(x, y) {
 	var rval = 1;
@@ -66,7 +65,7 @@ function catalan(n) {
 	return (fattoriale(2 * n)) / (fattoriale(n + 1) * fattoriale(n));
 }
 
-function coefficienti_binomiali(  n) {
+function coefficienti_binomiali(n) {
 
 	var vettore_coefficienti = [];
 
@@ -77,26 +76,25 @@ function coefficienti_binomiali(  n) {
 
 }
 
+function esponenti_binomiali(n) {
 
-function esponenti_binomiali(  n) {
+	var matrice_esponenti = [];
 
-	var matrice_esponenti=[] ;
-	
-	for (var i = 0 ; i<=n;i++)
-	{
-	matrice_esponenti[i]=new Array(n-i,i);
+	for (var i = 0; i <= n; i++) {
+		matrice_esponenti[i] = new Array(n - i, i);
 	}
-	
-	 
+
 	return matrice_esponenti;
 
 }
 
 function doppio_fattoriale(n) {
 	var rval = n;
-	if (n==0) {rval=1;
-}	else{
-	for (var i =n-2; i>0; i=i-2)
-		rval = rval * i;
-	}return rval;
+	if (n == 0) {
+		rval = 1;
+	} else {
+		for (var i = n - 2; i > 0; i = i - 2)
+			rval = rval * i;
+	}
+	return rval;
 }
