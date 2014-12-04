@@ -43,7 +43,7 @@ match lista  with
 |p::coda -> distanza p punto  ;print_dist coda punto
 
 ;;
-let   asd=make_list 100 in print_list asd;print_dist asd (new point);
+let   asd=make_list 1000 in print_list asd;print_dist asd (new point);
  
 read_line ()
 ;;
