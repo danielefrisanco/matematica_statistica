@@ -3,11 +3,11 @@
 
 open Graphics;;
 Random.self_init ();;
-Graphics.open_graph " 100x100";;
+Graphics.open_graph " 360x240";;
 class point =
     object
-		val mutable x =  Random.int 100
-		val mutable y =  Random.int 100
+		val mutable x =  Random.int 359
+		val mutable y =  Random.int 239
 		val mutable color =  rgb (Random.int 256)(Random.int 256)(Random.int 256)
 		method get_x = x
 		method get_y = y 
@@ -55,9 +55,9 @@ let rec print_dist  lista punto=
 		| []->Printf.printf "fine\n"
 		|p::coda -> distanza p punto  ;print_dist coda punto
 ;;
-let   asd=make_list 21 in (*print_list asd;print_dist asd (new point);print_disegna asd;*)
-	for i = 0 to 100 do 
-		for k = 0 to 100 do 
+let   asd=make_list 100 in (*print_list asd;print_dist asd (new point);print_disegna asd;*)
+	for i = 0 to 359 do 
+		for k = 0 to 239 do 
 			let punto=new point in 
 					punto#set_x i ;
 					punto#set_y k ; (*punto#stampa; *)
