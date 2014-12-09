@@ -69,7 +69,7 @@ let puntix =List.fast_sort sort_x asd  and puntiy =List.fast_sort sort_y asd  in
 		for k = 0 to 239 do 
 			let punto=new point in 
 					punto#set_x i ;
-					punto#set_y k ; (*punto#stampa; *)
+					punto#set_y k ; (*punto#stampa;*)
 					distanza_minima  punto puntix 10000. distanza_manhattan
 		done
 	done;;
