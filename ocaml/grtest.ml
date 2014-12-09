@@ -1,5 +1,5 @@
  
- 
+ (*non l'ho fatto io *)
  (* Per compilare questo esempio:
    ocamlc graphics.cma grtest1.ml -o grtest1 *)
 
